@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Проекты Medium Quality</title>
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="d-inline-block">Все проекты</h1>
+                    <img class="d-inline-block" style="width: 30%" src="img/Логотип.gif" alt="Medium Quality">
+                    <h6 class="mt-3">Всего <span class="text-danger" id="count_projects">0</span> шоу.</h6>
+                    <div class="input-group ui-widget mt-5">
+                        <input type="text" class="form-control bg-dark text-warning autocomplete" id="user_request"
+                            placeholder="Название шоу">
+                        <button class="btn btn-outline-danger" type="button" id="search-btn"
+                            onclick="Search()">Искать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Импроком/Логотип.jpg" alt="Импроком">
+                    <h1 class="d-inline-block">Импроком</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Громкий Вопрос</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором актёры «Импровизации» (Антон Шастун,
+                        Арсений Попов, Дмитрий Позов и Сергей Матвиенко) должны понять приглашённого гостя и ответить
+                        правильно на вопросы. Есть одна
+                        проблема: они совершенно не слышат друг друга, поэтому должны ОРАТЬ ОТВЕТ!</h5>
+                    <img class="mb-3" src="img/Импроком/Громкий Вопрос.jpg" alt="Громкий Вопрос">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203677279_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Тейбл Тайм</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором актёры «Импровизации» (Антон Шастун,
+                        Арсений Попов, Дмитрий Позов и Сергей Матвиенко) собрались в загородном доме на всю ночь, чтобы
+                        вспомнить детство и сыграть в
+                        настольные игры, которые каждый из них приготовил друг для друга.</h5>
+                    <img class="mb-3" src="img/Импроком/Тейбл Тайм/Логотип.jpg" alt="Тейбл Тайм">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203677279_9" target="_blank">СМОТРЕТЬ</a>
+                    <br>
+                    <audio controls src="/img/Импроком/Тейбл Тайм/Трек.mp3"></audio>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Шоу «Истории»</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором актёры «Импровизации» (Антон Шастун,
+                        Арсений Попов, Дмитрий Позов и Сергей Матвиенко) придумывают сюжет и героев истории прямо на
+                        сцене без заранее написанного сценария и подготовки.</h5>
+                    <img class="mb-3" src="img/Импроком/Шоу Истории.jpg" alt="Шоу «Истории»">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203677279_8" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ЧДКИ (Чё делаем? Куда идём?)</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Тревел-шоу, в котором актёры «Импровизации» (Антон
+                        Шастун, Арсений Попов, Дмитрий Позов и Сергей Матвиенко) отправляются в путешествие по России.
+                        Они ищут самые необычные места и отвечают на главные вопросы: «Чё делаем? Куда идём?».</h5>
+                    <img class="mb-3" src="img/Импроком/ЧДКИ/Логотип.jpg" alt="ЧДКИ">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203677279_10" target="_blank">СМОТРЕТЬ</a>
+                    <br>
+                    <audio controls src="/img/Импроком/ЧДКИ/Трек.mp3"></audio>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">На репите</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где комики (Сергей Горох, Максим Заяц, Сергей
+                        Шевелев и Артём Гаус) должны придумать вопрос к коротким видеороликам, которые рандомно
+                        появляются на экране. Единственное условие - это должно быть смешно!</h5>
+                    <img class="mb-3" src="img/Импроком/На репите.jpg" alt="На репите">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203677279_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Шастун/Логотип.jpg" alt="Шастун">
+                    <h1 class="d-inline-block">Шастун</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">НЕИГРЫ</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Добро пожаловать на НЕИГРЫ - соревнования двух участников
+                        в маленьких играх, но с большим размахом! Задача наших ведущих (они же и тренеры) Антона Шастуна
+                        и Димы Позова привести каждого из своих подопечных к победе, используя все свои знания, мудрость
+                        и жизненный опыт. И помни. Это НЕ ИГРЫ. Здесь всё серьёзно!</h5>
+                    <img class="mb-3" src="img/Шастун/НЕИГРЫ.jpg" alt="НЕИГРЫ">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-213802301_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Контакты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Мэтр импровизационного жанра Антон Шастун и его шоу
+                        «КОНТАКТЫ»! К нему в студию приходят звёздные гости, чтобы проверить эрудицию. Но не свою, а
+                        тех, чьи имена найдутся среди контактов в телефоне: друзья, знакомые, близки, коллеги и даже
+                        случайные люди. Один контакт, один звонок и одна минута на разговор. Кто же окажется умнее?</h5>
+                    <img class="mb-3" src="img/Шастун/Контакты.jpg" alt="Контакты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-213802301_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Чёрное / Белое</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу Антона Шастуна - «ЧЁРНОЕ/БЕЛОЕ», в котором
+                        приглашённые участники испытают на себе жадность, алчность, весь спектр психологических приёмов,
+                        а также получат шанс заработать деньги с помощью везения и обмана. Правила игры немного похожи
+                        на настольную игру «Мафия», которую мы модернизировали под наши условия. В отличие от «Мафии»,
+                        здесь можно победить не обманывая. И только от участников зависит какой путь они выберут: чёрный
+                        или белый.</h5>
+                    <img class="mb-3" src="img/Шастун/Чёрное-Белое.jpg" alt="Чёрное / Белое">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-213802301_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Цитаты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором Антон Шастун и Лиза Гончарова приглашают
+                        гостя и обсуждают цитаты.</h5>
+                    <img class="mb-3" src="img/Шастун/Цитаты.jpg" alt="Цитаты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-213802301_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Движ/Логотип.jpg" alt="Движ">
+                    <h1 class="d-inline-block">Движ</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ОТЫДО</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комики Сергей Горох, Максим Заяц, Артём
+                        Гаус и Сергей Шевелев постараются посмотреть на мир глазами гостя. Кто справится с этой задачей
+                        лучше всех и узнает гостя ОТ и ДО?</h5>
+                    <img class="mb-3" src="img/Движ/ОТЫДО.jpg" alt="ОТЫДО">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-161713881_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">JAM</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Дерзкий импровизационный проект, в котором участники
+                        могут говорить и делать всё, что угодно! Комики объединятся в уникальные по составу команды и
+                        столкнутся в импров-битве на одной сцене, чтобы выяснить, кто смешнее. Решение - за зрителями из
+                        зала! Новые форматы, музыка и стиль - это и есть «Jam»!</h5>
+                    <img class="mb-3" src="img/Движ/JAM.jpg" alt="JAM">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-161713881_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Подстава</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Первое шоу, в котором если участники отвечают неправильно
+                        - значит всё идёт, как надо. Чтобы победить, нужно не только знать ответы на свои вопросы, но и
+                        догадаться, кто из соперников не разбирается в той или иной категории, чтобы умело подставить
+                        его сложной темой.</h5>
+                    <img class="mb-3" src="img/Движ/Подстава.jpg" alt="Подстава">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-161713881_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Medium Quality Channel/Логотип.jpg"
+                        alt="Medium Quality Channel">
+                    <h1 class="d-inline-block">Medium Quality Channel</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Хоумис</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Развлекательная викторина, в которой две пары друзей
+                        соревнуются в нескольких раундах в умении понимать друг друга. Ведущие: Дима Журавлёв и Валера
+                        Артюхов.</h5>
+                    <img class="mb-3" src="img/Medium Quality Channel/Хоумис.jpg" alt="Хоумис">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-109800058_12" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Меломан</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Начинающая легенда Дмитрий Журавлёв собрал у себя дома
+                        своих друзей, чтобы вместе с кайфом поорать песни в караоке. Гости соревнуются между собой в
+                        знании русской народной попсы. Здесь не важно, КАК ты поёшь, здесь важно, ЧТО ты поёшь!</h5>
+                    <img class="mb-3" src="img/Medium Quality Channel/Меломан.jpg" alt="Меломан">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-109800058_9" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Важный момент</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это шоу, в котором актёры импровизации вместе с гостем
+                        прорепетируют его предстоящую стрессовую ситуацию, и помогут преодолеть волнение.</h5>
+                    <img class="mb-3" src="img/Medium Quality Channel/Важный момент.jpg" alt="Важный момент">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-109800058_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Outside Stand Up/Логотип.jpg" alt="Outside Stand Up">
+                    <h1 class="d-inline-block">Outside Stand Up</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Сольники</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Сольный концерт, в котором комик выступает перед живой
+                        аудиторией, обычно говоря напрямую со зрителями.</h5>
+                    <img style="width: 30%;" class="mb-3" src="img/Outside Stand Up/Сольники.jpg" alt="Сольники">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211231029_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кринж стендап</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В этом шоу комики специально будут писать максимально
+                        кринжовый Stand Up, а после тянуть жребий, чтобы решить, кто из них расскажет его перед
+                        аудиторией на открытом микрофоне.</h5>
+                    <img style="width: 30%;" class="mb-3" src="img/Outside Stand Up/Кринж стендап.jpg"
+                        alt="Кринж стендап">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211231029_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">2 микрофона</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где опытные комики шутят на темы, которых никогда в
+                        жизни до этого не видели. Комики импровизируют без подготовки вместе с ведущим Кириллом
+                        Сиэтловым.</h5>
+                    <img style="width: 30%;" class="mb-3" src="img/Outside Stand Up/2 микрофона.jpg" alt="2 микрофона">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211231029_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Попробуй рассмеши</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это проект, в котором комик Тимур Джанкёзов отправляется
+                        в самые разные уголки России - туда, где люди никогда не видели стендап-комедию вживую. Он будет
+                        изучать культуру, быт, проблемы и сплетни местных жителей, чтобы написать концерт и попытаться
+                        их рассмешить.</h5>
+                    <img style="width: 30%;" class="mb-3" src="img/Outside Stand Up/Попробуй рассмеши.jpg"
+                        alt="Попробуй рассмеши">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211231029_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Натальная карта/Логотип.jpg" alt="Натальная карта">
+                    <h1 class="d-inline-block">Натальная карта (Easycom) <sup>*</sup></h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Натальная карта</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором ведущие разбирают натальную карту гостя.
+                        Олеся в это очень сильно верит, а Дима очень сильно сомневается. Кто из них прав - решает гость.
+                    </h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Натальная карта/Натальная карта.jpg"
+                        alt="Натальная карта">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211232966_15" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Между нами</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором зрители и звёздный гость делятся своими
+                        историями из отношений, лучшая история получает денежный приз.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Натальная карта/Между нами.jpg" alt="Между нами">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211232966_14" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Утреннее шоу</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу ведущие и звёздный гость обсуждают действительно
+                        «важные проблемы». Иногда ведущие обходятся без гостей, вчетвером разговаривая на самые
+                        разнообразные темы.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Натальная карта/Утреннее шоу.jpg" alt="Утреннее шоу">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211232966_10" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Фастмуд & 12 вопросов</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Выпуски разделяются по темам: мем-мейкер, что ест или что
+                        (не) ест, звуковая волна, 12 вопросов и оверпрайс. Приглашённый комик, в зависимость от темы,
+                        отвечал на вопросы, сравнивал ценники, угадывал звуки или придумывал мемы.</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <img style="width: 50%;" class="mb-3" src="img/Натальная карта/Фастмуд.jpg" alt="Фастмуд">
+                            <br>
+                            <a href="https://vk.com/video/playlist/-211232966_11" target="_blank">СМОТРЕТЬ</a>
+                        </div>
+                        <div class="col-6">
+                            <img style="width: 50%;" class="mb-3" src="img/Натальная карта/12 вопросов.jpg"
+                                alt="12 вопросов">
+                            <br>
+                            <a href="https://vk.com/video/playlist/-211232966_12" target="_blank">СМОТРЕТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Институт телевидения</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В каждом выпуске 2 журналиста ведут репортажи с самых
+                        разнообразных мероприятий.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Натальная карта/Институт телевидения.jpg"
+                        alt="Институт телевидения">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211232966_13" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/LabelCom/Логотип.jpg" alt="LABELCOM">
+                    <h1 class="d-inline-block">LABELCOM <sup>*</sup></h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">#Созвон</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу «Созвон» 2 участника ставят друг другу задачу:
+                        позвонить по определённому номеру и в разговоре использовать набор заранее заготовленных
+                        абсурдных фраз до того, как на том конце повесят трубку.</h5>
+                    <img class="mb-3" src="img/LabelCom/Созвон.jpg" alt="Созвон">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_8" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Стыдно знать</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу комика Андрея Бебурешвили. Две приглашённые звезды
+                        каждую неделю будут соревноваться в своих постыдных знаниях в таких сферах как: плохое кино,
+                        ток-шоу, российская попса и многих других!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Стыдно знать.jpg" alt="Стыдно знать">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_26" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Сколько?!</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу Игоря Джабраилова, в которое он приглашает своих
+                        звёздных друзей и предлагает угадать стоимость самых разных товаров на популярном агрегаторе
+                        объявлений.</h5>
+                    <img class="mb-3" src="img/LabelCom/Сколько.jpg" alt="Сколько">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_21" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Звёздный дурак</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором Дима Журавлёв и Игорь Джабраилов вместе со
+                        звёздными гостями участвуют в юмористической карточной игре, благодаря которой мы узнаем, кто из
+                        участников удостоится звания «звёздный дурак».</h5>
+                    <img class="mb-3" src="img/LabelCom/Звёздный дурак.jpg" alt="Звёздный дурак">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_24" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ПВН (Плохие выдуманные новости)</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это выпуск новостей, которые нигде и никогда не
+                        происходили!</h5>
+                    <img class="mb-3" src="img/LabelCom/ПВН.jpg" alt="ПВН">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_18" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Прощай, Легенда</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором разыгрываются поминки, на которых
+                        прощаются с известным человеком.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Прощай, Легенда.jpg"
+                        alt="Прощай, Легенда">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_19" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Большая прожарка</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Комедийное хейт-шоу, где популярные звёзды узнают
+                        народное мнение о себе. Им придётся выслушивать шутки про свою личную жизнь, творчество,
+                        карьеру, внешний вид. Звёздных гостей «прожарят» стендап-комики - они голодные, злые, а значит
+                        им нечего терять!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Большая прожарка.jpg"
+                        alt="Большая прожарка">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_25" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Roast Battle</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Поджанр прожарки, в котором участвуют 2 комика. Они
+                        прожаривают друг друга по очереди, в течение нескольких раундов.</h5>
+                    <img class="mb-3" src="img/LabelCom/Roast Battle.jpg" alt="Roast Battle">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_13" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ЧБД (Что было дальше?)</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу «Что было дальше?» - это шоу, в котором комики
+                        слушают истории, а потом пытаются угадать, что было дальше.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/ЧБД.jpg" alt="ЧБД">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_15" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Откуда ты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Тревел-шоу, в котором ведущий Игорь Джабраилов ездит по
+                        городам, в которых родились известные люди, и вместе с ними прогуливается по знаковым для них
+                        местам.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Откуда ты.jpg" alt="Откуда ты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_23" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кто здесь комик</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">3 комика соревнуются за звание самого смешного,
+                        сообразительного и находчивого.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Кто здесь комик.jpg" alt="Кто здесь комик">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_12" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Миллионы</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комики Расул Чабдаров и Гурам Амарян
+                        пробуют роскошную жизнь за счёт продюсеров. Цель шоу: показать, что деньги - это не главное
+                        (особенно, когда они не твои).</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Миллионы.jpg" alt="Миллионы">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_17" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Мой первый рэп</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором звёзды записывают свой первый рэп-трек, а
+                        помогают им в этом рэперы МЦ Похоронил и Alphavite. Гость также ответит на вопросы самой
+                        андерграундной рэп-викторины от ведущего Артёма Муратова. </h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Мой первый рэп.jpg"
+                        alt="Мой первый рэп">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_28" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Разговор с Антоном Остерниковым</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это просто разговор, в котором Антон Константинович
+                        общается с гостями о их жизни.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Разговор с Антоном Остерниковым.jpg"
+                        alt="Разговор с Антоном Остерниковым">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_27" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Понты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу импровизаций, где 2 комика в студии пытаются хорошими
+                        шутками склеить девушку. Они шутят на заданные темы «здесь и сейчас» без подготовки и
+                        прописанного сценария. Тот, кто смешнее, уходит с девушкой.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Понты.jpg" alt="Понты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_16" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Блиц-крик</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Развлекательная юмомистическая викторина с участием
+                        российских знаменитостей. Ведущий - Рустам Саидахметов. Игра состоит из трёх раундов. В игре
+                        разрешается отвечать смешно или правильно.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelCom/Блиц-крик.jpg" alt="Блиц-крик">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Шутки типа АСМР</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шутки типа АСМР. Это как АСМР, но с шутками.</h5>
+                    <img class="mb-3" src="img/LabelCom/Шутки типа АСМР.jpg" alt="Шутки типа АСМР">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209976560_20" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/LabelPlay/Логотип.jpg" alt="LabelPlay">
+                    <h1 class="d-inline-block">LabelPlay</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Приключенцы</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Чтo мoжeт быть вeceлee, чeм coбpaтьcя c лучшими дpузьями
+                        зa oдним cтoлoм и пoигpaть в нeчтo интepecнoe и зaxвaтывaющee? Пpaвильнo: coбpaтьcя c тeми жe
+                        дpузьями в cтудии и пoгpузитьcя в мнoгoгpaнную вceлeнную вceмиpнo извecтнoй D&D! Пятepo
+                        учacтникoв этoгo шoу пocтупaют имeннo тaк и c гoлoвoй ныpяют в нeизвeдaнныe миpы мeчa и мaгии.
+                        Ha пути к пoбeдe иx ждeт мнoжecтвo иcпытaний: гoлoвoкpужитeльныe тpиумфы и пopaжeния, pукoпaшныe
+                        cxвaтки и кoлдoвcтвo, вeликиe битвы и cлoвecныe бaтaлии. Пoпepeмeннo пoбeждaющaя чacть кoмпaнии
+                        c удoвoльcтвиeм и пopoй зaтpуднeниями пpeoдoлeвaeт вce пpeпятcтвия, вeceлитcя и paдуeтcя нoвым
+                        вoзмoжнocтям, a пpoигpывaющaя, пoгpуcтив coвceм чутoчку, cнoвa бpocaeтcя в бoй.</h5>
+                    <img class="mb-3" src="img/LabelPlay/Приключенцы.jpg" alt="Приключенцы">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220728319_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Гик-интервью</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Гость раскроет себя с гик-стороны. Он расскажет о своём
+                        увлечении, о фанфиках, о том, что смотрит, что читает и во что играет. Ну и, конечно же, мы не
+                        отпустим его без наших тестов на гик-составляющую!</h5>
+                    <img class="mb-3" src="img/LabelPlay/Гик-интервью.jpg" alt="Гик-интервью">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220728319_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/LabelSmart/Логотип.jpg" alt="LABELSMART">
+                    <h1 class="d-inline-block">LABELSMART <sup>*</sup></h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Факты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором интересные люди обсуждают интересные
+                        факты. Ведущие - Илья Швецов и Александр Якушев.</h5>
+                    <img class="mb-3" src="img/LabelSmart/Факты.jpg" alt="Факты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Аргументы</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Аргументы - спин-офф шоу «Факты». Ведущие - Илья Швецов,
+                        Александр Якушев.</h5>
+                    <img class="mb-3" src="img/LabelSmart/Аргументы.jpg" alt="Аргументы">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_22" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Есть версия</h3>
+                    <h6 class="text-danger">Выходит в сообществе «Дела | true crime».</h6>
+                    <h5 class="text-light font-KurochkaLapkoi">Новое true crime шоу, где ведущие говорят о НЕРАСКРЫТЫХ
+                        преступлениях. Каждый выпуск - это загадка, которая, скорее всего, никогда не будет разгадана,
+                        но ведущие, проводя своё расследование, попытаются это сделать. Версии, предположения и
+                        свидетели, ведущие рассмотрят каждый момент этих запутанных историй.</h5>
+                    <img class="mb-3" src="img/LabelSmart/Есть версия.jpg" alt="Есть версия">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217986831_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Я бы посмотрел</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором приглашённые комики и режиссёр вместе с
+                        ведущей Оксаной Мафагел придумывают идею сериала или фильма, исходя из названия, которое дал
+                        зритель. Задача участников к концу шоу - придумать синопсис и ответить на главный вопрос: «Я бы
+                        посмотрел?».</h5>
+                    <img class="mb-3" src="img/LabelSmart/Я бы посмотрел.jpg" alt="Я бы посмотрел">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_23" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Вопрос на доверие</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Юмористическая викторина с ведущей Сашей Муратовой, в
+                        которой комики соревнуются в умении убеждать.</h5>
+                    <img class="mb-3" src="img/LabelSmart/Вопрос на доверие.jpg" alt="Вопрос на доверие">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_26" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Lock Stock</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В жизни побеждает не самый умный, а самый уверенный.
+                        Добро пожаловать на типа интеллектуальное шоу! В нашем шоу 2 варианта победить - либо точно
+                        знать, либо лучше всех делать вид, что ты точно знаешь! Деньги заберёт только ОДИН!</h5>
+                    <img class="mb-3" src="img/LabelSmart/Lock Stock.jpg" alt="Lock Stock">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_24" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Было такое</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Каждый участник делится воспоминанием из своей биографии,
+                        которое может откликнуться у других участников беседы и у зрителей.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelSmart/Было такое.jpg" alt="Было такое">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_21" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Отдел раскрытых дел</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Детективы Швецов и Якушев в компании своих напарников
+                        бьются над раскрытием уже раскрытых дел.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelSmart/Отдел раскрытых дел.jpg"
+                        alt="Отдел раскрытых дел">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-214484275_27" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/LabelSmart Подкасты/Логотип.jpg"
+                        alt="Labelsmart.Подкасты">
+                    <h1 class="d-inline-block">Labelsmart.Подкасты <sup>*</sup></h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Надкаст</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">4 друга откровенно обсуждают то, что их волнует.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelSmart Подкасты/Надкаст.jpg" alt="Надкаст">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Мне смешно</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это познавательно-развлекательное шоу, где вы можете
+                        узнать, как формировалось чувство юмора наших гостей, получить рекомендации чего бы такого
+                        смешного посмотреть и даже неплохо провести время.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/Мне смешно.jpg" alt="Мне смешно">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Ну мам</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это семейное шоу о разнице поколений. Шоу, где обсуждают
+                        вечные темы и отвечают на вопросы зрителей.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/Ну мам.jpg" alt="Ну мам">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">GID</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Научно-популярное шоу, где комики гуляют с историком по
+                        главным туристическим местам Москвы.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/GID.jpg" alt="GID">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_8" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Философское шоу</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором разбираются сложные философские вопросы.
+                        Лиза старается объяснить, а Игорь пытается понять. В споре за рождение истины помогает звёздный
+                        гость.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/Философское шоу.jpg" alt="Философское шоу">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">2 комнаты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Реалити-подкаст, в котором две комнаты (мужская и
+                        женская) обсуждают одну проблему,</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelSmart Подкасты/2 комнаты.jpg" alt="2 комнаты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_9" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Spooky</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это попытка разобраться в вопросах, интересных нам, с
+                        непредвзятой точки зрения. Сидим у костра, слушаем жуткие истории.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/Spooky.jpg" alt="Spooky">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Шоу о загонах</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где комики делятся своими загонами и пытаются
+                        разобраться с помощью советов психолога.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/LabelSmart Подкасты/Шоу о загонах.jpg"
+                        alt="Шоу о загонах">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Дела</h3>
+                    <h6 class="text-danger">Частично выходит в сообществе «Дела | true crime».</h6>
+                    <h5 class="text-light font-KurochkaLapkoi">Криминальный подкаст, в котором исследуются реальные
+                        преступления, громкие дела и судьбы людей, причастных к ним. Главные герои этих историй - не
+                        жестокие убийцы и насильники, а те, кто месяцы, а порой и годы шёл по их следу, ловил и
+                        доказывал их виновность в суде.</h5>
+                    <img class="mb-3" src="img/LabelSmart Подкасты/Дела.jpg" alt="Дела">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471746_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/SlowSlowCow/Логотип.jpg" alt="SlowSlowCow">
+                    <h1 class="d-inline-block">SlowSlowCow</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Шторки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу в котором команда SSC показывает миниатюры, а задача
+                        двух приглашённых гостей не засмеяться или засмеяться меньше чем соперник. Сложность состоит в
+                        том, что гости не знают что будет происходить, ведь комики находятся за шторками, а когда они
+                        открываются на них сразу выливается поток безумного и абсурдного юмора. Шторки это неожиданно,
+                        безумно и смешно. Ах, да. В конце засмеявшийся больше всех выполняет безумное задание, поэтому
+                        ставки здесь высоки.</h5>
+                    <img class="mb-3" src="img/SlowSlowCow/Шторки.jpg" alt="Шторки">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217985283_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Биполярная песня</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Суть шоу такова: мы поделились на условные команды и
+                        сейчас прямо в студии мы придумаем текст песни. Каждая команда по очереди будет добавлять в
+                        текст своё слово. В конце участники попробуют спеть то, что получится.</h5>
+                    <img class="mb-3" src="img/SlowSlowCow/Биполярная песня.jpg" alt="Биполярная песня">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217985283_14" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Про Милле</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">К участникам заходят гости подвергшиеся влиянию алкоголя
+                        на свой организм, задача участников как можно точнее угадать количество промилле внутри каждого
+                        гостя.</h5>
+                    <img class="mb-3" src="img/SlowSlowCow/Про Милле.jpg" alt="Про Милле">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217985283_13" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Сложный выбор</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Разговорное шоу, в котором участники ставятся перед
+                        интересным выбором и пытаются обосновать свою точку зрения.</h5>
+                    <img class="mb-3" src="img/SlowSlowCow/Сложный выбор.jpg" alt="Сложный выбор">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217985283_10" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Охота на дельфина</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором очень талантливый ведущий играет с гостями
+                        в разные игры, а девчонки вечело и озорно смеются.</h5>
+                    <img class="mb-3" src="img/SlowSlowCow/Охота на дельфина.jpg" alt="Охота на дельфина">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217985283_8" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/SlowSLowGames/Логотип.jpg" alt="SlowSLowGames">
+                    <h1 class="d-inline-block">SlowSLowGames</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Карточки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Игра на ассоциации, в которой нужно придумать слова на
+                        заданную категорию, стараясь, чтобы они совпали с ответами других участников или наоборот не
+                        совпали.</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <img style="width: 50%;" class="mb-3" src="img/SlowSLowGames/Карточки.jpg" alt="Карточки">
+                            <br>
+                            <a href="https://vk.com/video/playlist/-221636541_1" target="_blank">СМОТРЕТЬ</a>
+                        </div>
+                        <div class="col-6">
+                            <img style="width: 50%;" class="mb-3" src="img/SlowSLowGames/Карточки-online.jpg"
+                                alt="Карточки-online">
+                            <br>
+                            <a href="https://vk.com/video/playlist/-221636541_2" target="_blank">СМОТРЕТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Липсинк</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором участники соревнуются в чтении по губам на
+                        скорость.</h5>
+                    <img class="mb-3" src="img/SlowSLowGames/Липсинк.jpg" alt="Липсинк">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221636541_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Не пара</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где Александр и Инга Алымовы приглашают семейную
+                        пару в гости, меняются партнёрами и играют в разные игрушки.</h5>
+                    <img class="mb-3" src="img/SlowSLowGames/Не пара.jpg" alt="Не пара">
+                    <br>
+                    <a href="https://vk.com/video-221636541_456239132" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Пять слов</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Участникам по очереди нужно называть разные слова на
+                        заданную тему. Соперники не будут слышать друг друга, и за каждый неверный ответ или повтор их
+                        будет бить током!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/SlowSLowGames/Пять слов.jpg" alt="Пять слов">
+                    <br>
+                    <a href="https://vk.com/video-221636541_456239142" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Плохие Песни/Логотип.jpg" alt="Плохие Песни (SSC)">
+                    <h1 class="d-inline-block">Плохие Песни (SSC)</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Плохие Песни</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Самое смешное из музыкальных шоу в России без
+                        использования инструментов и, местами, без вокала! </h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Плохие Песни/Плохие Песни.jpg" alt="Плохие Песни">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-219105664_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Дмитрий Позов/Логотип.jpg" alt="Дмитрий Позов">
+                    <h1 class="d-inline-block">Дмитрий Позов</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кулинарка</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">У Димы Позова и Серёги Гороха есть набор продуктов, но
+                        нет рецептов. Им нужно приготовить 3 блюда, используя все ингредиенты. У повара абсолютно такие
+                        же продукты, но, в отличие от парней, есть рецепты к ним, которые мы нашли в интернете. Повар
+                        чётко следует рецепту, чтобы у парней были шансы. Когда всё будет готово, приглашённый гость с
+                        помощью слепой дегустации определит - какие блюда лучше. Смогут ли парни победить рецепты из
+                        интернета за счёт своей импровизации? Давайте узнаем</h5>
+                    <img class="mb-3" src="img/Дмитрий Позов/Кулинарка.jpg" alt="Кулинарка">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-223550774_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Я жена</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Катя Позова - жена известного комика, актёра шоу
+                        «Импровизаторы» Дмитрия Позова встречается и общается о жизни с жёнами популярных артистов.</h5>
+                    <img class="mb-3" src="img/Дмитрий Позов/Я жена.jpg" alt="Я жена">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-223550774_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Азамат Мусагалиев/Логотип.jpg" alt="Азамат Мусагалиев">
+                    <h1 class="d-inline-block">Азамат Мусагалиев</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ШПАМ (Шоу памяти)</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Помните свой вчерашний день? А что вам сказали час назад?
+                        У наших гостей задача ещё сложнее - вспомнить то, что было буквально минуту назад!</h5>
+                    <img class="mb-3" src="img/Азамат Мусагалиев/ШПАМ.jpg" alt="ШПАМ">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-110135406_40" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Я себя знаю</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это псевдоинтеллектуальная псевдовикторина, в которой
+                        Азамат Мусагалиев попытается найти и задать селебам вопросы о них, на которые они не смогут
+                        ответить. Зачем? Да специально, чтобы за каждый неправильный ответ услышать от звезды
+                        отвратительный факт из её биографии.</h5>
+                    <img class="mb-3" src="img/Азамат Мусагалиев/Я себя знаю.jpg" alt="Я себя знаю">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-110135406_30" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Это про меня</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Юмористическая викторина, в которой комики угадывают
+                        интересные факты друг про друга.</h5>
+                    <img class="mb-3" src="img/Азамат Мусагалиев/Это про меня.jpg" alt="Это про меня">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-110135406_37" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Большое шоу</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Десять известных людей соревнуются за денежный приз.
+                        Задача простая - НЕ РАССМЕЯТЬСЯ! Кто не справится - выбывает из игры. Последний получает всё.
+                    </h5>
+                    <img class="mb-3" src="img/Азамат Мусагалиев/Большое шоу.jpg" alt="Большое шоу">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_34" target="_blank">1 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_36" target="_blank">2 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_38" target="_blank">3 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_39" target="_blank">4 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_41" target="_blank">5 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_42" target="_blank">6 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_43" target="_blank">7 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_45" target="_blank">8 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-110135406_46" target="_blank">9 СЕЗОН</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Иван Абрамов/Логотип.jpg" alt="Иван Абрамов">
+                    <h1 class="d-inline-block">Иван Абрамов</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Родная речь</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где гости Ивана Абрамова будут пытаться в течение
+                        МИНУТЫ говорить на случайную тему - без «воды», запинок и повторений слов. Посмотрим, кто дольше
+                        продержится?</h5>
+                    <img class="mb-3" src="img/Иван Абрамов/Родная речь.jpg" alt="Родная речь">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-27477591_55569764" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Подкаст Абрамова</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Откровенный разговор на темы, в которых зритель найдёт
+                        отражение своих детских страхов и взрослых переживаний.</h5>
+                    <img class="mb-3" src="img/Иван Абрамов/Подкаст Абрамова.jpg" alt="Подкаст Абрамова">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-27477591_55569762" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Площадка/Логотип.jpg" alt="Площадка">
+                    <h1 class="d-inline-block">Площадка</h1>
+                    <h6 class="text-secondary">Основная тема - футбол.</h6>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Биографии</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Рассказываем самые крутые истории из автобиографий
+                        великих футболистов и тренеров.</h5>
+                    <img class="mb-3" src="img/Площадка/Биографии.jpg" alt="Биографии">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Зашквары</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">4 участника наклеивают себе на лоб карточки. На них
+                        загадан человек из мира спорта и его реальный зашквар. С помощью вопросов, на которые можно
+                        ответить только «Да» или «Нет», нужно отгадать своего персонажа и его зашквар. Первый отгадавший
+                        - получит 10к, последний - заплатит ему эти деньги.</h5>
+                    <img class="mb-3" src="img/Площадка/Зашквары.jpg" alt="Зашквары">
+                    <br>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-203488550_5" target="_blank">Спортивные зашквары</a>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-203488550_4" target="_blank">Футбольные зашквары</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Игра в правду</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комики выбирают, какой из трёх фактов о
+                        звезде является правдой.</h5>
+                    <img class="mb-3" src="img/Площадка/Игра в правду.jpg" alt="Игра в правду">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ЛЧ на диване (и подобные)</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Смотрим матчи ЛЧ, ЧМ, РПЛ.</h5>
+                    <img class="mb-3" src="img/Площадка/ЛЧ на диване.jpg" alt="ЛЧ на диване">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-203488550_7" target="_blank">ЛЧ на диване</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-203488550_9" target="_blank">ЧМ на диване</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-203488550_8" target="_blank">РПЛ на диване</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Winline Media Poker</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Турнир по покеру, в котором принимают участие медийные
+                        личности.</h5>
+                    <img class="mb-3" src="img/Площадка/Winline Media Poker.jpg" alt="Winline Media Poker">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_10" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Евродом</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Спустя 2 года мы снова освобождаем свои графики и
+                        устраиваем себе отпуск в “Евродоме” ради главного события этого лета - Чемпионата Европы по
+                        футболу!</h5>
+                    <img class="mb-3" src="img/Площадка/Евродом.jpg" alt="Евродом">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_12" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Мне всё забронировали</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Алексей Сапрыкин проводит футбольные выходные в городах
+                        Российской Премьер-Лиги, где ему всё забронировали его друзья.</h5>
+                    <img class="mb-3" src="img/Площадка/Мне всё забронировали.jpg" alt="Мне всё забронировали">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Номинации</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Нам дают футбольные номинации, в них каждый из нас
+                        готовит свои кандидатуры. За лучший вариант голосует гость. В выпуске победит тот, кто заберёт
+                        больше номинаций.</h5>
+                    <img style="width: 50%" class="mb-3" src="img/Площадка/Номинации.jpg" alt="Номинации">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-203488550_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Площадка+/Логотип.jpg" alt="Площадка+">
+                    <h1 class="d-inline-block">Площадка+</h1>
+                    <h6 class="text-secondary">Основная тема - все медийные личности.</h6>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Биографии</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Рассказываем самые крутые истории из (авто-)биографий
+                        известных личностей</h5>
+                    <img class="mb-3" src="img/Площадка+/Биографии.jpg" alt="Биографии">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471652_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Зашквары</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">4 участника наклеивают себе на лоб карточки. На них
+                        загадан известный человек и его реальный зашквар. С помощью вопросов, на которые можно
+                        ответить только «Да» или «Нет», нужно отгадать своего персонажа и его зашквар. Первый отгадавший
+                        - получит 10к, последний - заплатит ему эти деньги.</h5>
+                    <img class="mb-3" src="img/Площадка+/Зашквары.jpg" alt="Зашквары">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471652_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Игра в правду</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комики выбирают, какой из трёх фактов о
+                        звезде является правдой.</h5>
+                    <img class="mb-3" src="img/Площадка+/Игра в правду.jpg" alt="Игра в правду">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471652_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Реки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Речная экспедиция "Астрахань - Соловки". 32 дня. 22
+                        города. 4100 километров. Около 430 человек в кадре.</h5>
+                    <img class="mb-3" src="img/Площадка+/Реки.jpg" alt="Реки">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471652_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Комьюнити/Логотип.jpg" alt="Комьюнити">
+                    <h1 class="d-inline-block">Комьюнити</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Комьюнити</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Атмосферное шоу Расула Чабдарова и Павла Дедищева. Вас
+                        ждёт: выступления молодых стендап-комиков, крутые гости, дружеское общение и живая музыка!</h5>
+                    <img class="mb-3" src="img/Комьюнити/Комьюнити.jpg" alt="Комьюнити">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Решалы</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором Павел Дедищев, Артём Винокур, Гурам Амарян
+                        и Расул Чабдаров решают проблемы зрителей в зале.</h5>
+                    <img class="mb-3" src="img/Комьюнити/Решалы.jpg" alt="Решалы">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">БылоСлово</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Лингвистический фарс «БЫЛО СЛОВО». В гостях у Паши
+                        Дедищева 4 известных мастера слова попытаются отгадать значения четырёх малоизвестных слов.</h5>
+                    <img class="mb-3" src="img/Комьюнити/Было Слово.jpg" alt="Было Слово">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Ты кто такой?</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комики угадывают личную информацию о
+                        госте, задавая при этом только наводящие вопросы. За каждый неправильно угаданный факт, гость
+                        забирает реальные деньги.</h5>
+                    <img class="mb-3" src="img/Комьюнити/Ты кто такой.jpg" alt="Ты кто такой">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ПлюсМинус Интересно</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Паша и Паша зовут друзей, чтобы поделиться друг с другом
+                        парой-тройкой ПЛЮС-МИНУС ИНТЕРЕСНЫХ историй.</h5>
+                    <img class="mb-3" src="img/Комьюнити/ПлюсМинус Интересно.jpg" alt="ПлюсМинус Интересно">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Народ против</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Интерактивная викторина, в которой Гурам Амарян при
+                        помощи зрителей из зала проверяет насколько «зазвездился» известный человек.</h5>
+                    <img class="mb-3" src="img/Комьюнити/Народ против.jpg" alt="Народ против">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">По хатам</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором комик Гурам Амарян врывается в хату к
+                        знаменитостям и оценивает вещи. Если крутых вещей оказывается больше, то Гурам дарит в хату
+                        подарок, если же больше плохих, то что то забирает.</h5>
+                    <img class="mb-3" src="img/Комьюнити/По хатам.jpg" alt="По хатам">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471730_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Женский форум/Логотип.jpg" alt="Женский форум">
+                    <h1 class="d-inline-block">Женский форум</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Женский форум</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Девушки вместе с приглашённым гостем изучают темы с
+                        женского форума, обсуждают их и пишут коллективный ответ. Освещая разные ситуации и насущные
+                        проблемы используя при этом юмористическую подачу.</h5>
+                    <img style="width: 50%" class="mb-3" src="img/Женский форум/Женский форум.jpg" alt="Женский форум">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-211229778_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Варвара Щербакова/Логотип.jpg"
+                        alt="Варвара Щербакова по вашим интересам!">
+                    <h1 class="d-inline-block">Варвара Щербакова по вашим интересам!</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">В гостях у Вари</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Весёлый, уютный вечер в компании классных гостей, всё
+                        разувайтесь, наливайте чай - вы в гостях у Вари.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Варвара Щербакова/В гостях у Вари.jpg"
+                        alt="В гостях у Вари">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-219482354_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/История на ночь/Логотип.jpg" alt="История на ночь">
+                    <h1 class="d-inline-block">История на ночь</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">История на ночь</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Исторический подкаст с Женей Чебатковым, Расулом
+                        Чабдаровым и Томасом Гайсановым.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/История на ночь/История на ночь.jpg"
+                        alt="История на ночь">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-218471753_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/CHBTKV/Логотип.jpg" alt="CHBTKV">
+                    <h1 class="d-inline-block">CHBTKV - Евгений Чебатков</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Языковой барьер</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где гости пытаются разобраться в разных акцентах
+                        английского языка. Ху вил вин? Ви вилл файнд аут!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/CHBTKV/Языковой барьер.jpg" alt="Языковой барьер">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212493567_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кем ты был(а)?</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где гости просматривают свой ВК, как они общались,
+                        что слушали и с чего смеялись, смотри в выпусках шоу «кем ты был» с Евгением Чебатковым и Сашей
+                        Ни.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/CHBTKV/Кем ты был.jpg" alt="Кем ты был">
+                    <br>
+                    <a href="https://vk.com/video-212493567_456239322" target="_blank">СМОТРЕТЬ</a>
+                    и другие
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/ОХ/Логотип.jpg" alt="ОХ">
+                    <h1 class="d-inline-block">ОХ</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Ошуительное Хоу</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">То, что не помещалось в телек, теперь поместится здесь.
+                        Жёсткий юмор, крутой монтаж со спецэффектами и звёздные гости.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/ОХ/Ошуительное Хоу.jpg" alt="Ошуительное Хоу">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-165221845_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Zona Komforta</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Ярослав Костров, хамоватый и изворотливый владелец
+                        небольшой транспортной компании в Мурманске, по стечению обстоятельств попадает в норвежскую
+                        тюрьму, где уровень комфорта напоминает хорошие гостиницы со всеми удобствами и интернетом.
+                        Единственное, что связывает Ярика с домом, - это окно «Скайпа», через которое ему придётся
+                        как-то выпутываться из сложившихся обстоятельств, а также противостоять мафии, контролировать
+                        свой бизнес, стараться не потерять жену и воспитывать детей, которые по «скайпу» воспитываться
+                        отказываются…</h5>
+                    <img class="mb-3" src="img/ОХ/Zona Komforta.jpg" alt="Zona Komforta">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-165221845_4" target="_blank">1 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-165221845_3" target="_blank">2 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-165221845_8" target="_blank">3 СЕЗОН</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/ТОП/Логотип.jpg" alt="ТОП">
+                    <h1 class="d-inline-block">ТОП</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ТОП</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, которое полностью посвящено звёздному гостю. В
+                        каждом выпуске Карина Кросс зовёт звезду, и просит З-х соведущих подготовить уникальные рубрики.
+                        Все рубрики так или иначе связаны сгостем и проводятся в отдельных мини-студиях. В перерывах
+                        между посещением комнат, идёт общение и интерактивы с Кариной Кросс. В конце шоу гость выбирает
+                        чья комната ему понравилась больше.</h5>
+                    <img class="mb-3" src="img/ТОП/ТОП.jpg" alt="ТОП">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-159848117_28" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">ЛПШКИ</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, где поднимаются темы, волнующие подростков. Топовые
+                        девушки-блогеры Амина Tenderlybae, Милана Некрасова, Милана Хаметова и Яна Зенина обсуждают
+                        проблемы девочек из зрительского зала и откровенно делятся своим опытом. Словно близкие подруги,
+                        они готовы выслушать и дать совет. </h5>
+                    <img class="mb-3" src="img/ТОП/ЛПШКИ.jpg" alt="ЛПШКИ">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-159848117_29" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/BUBBLEGUNSHOW/Логотип.jpg" alt="BUBBLEGUNSHOW">
+                    <h1 class="d-inline-block">BUBBLEGUNSHOW</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кто твой подписчик?</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу проверяют, насколько известные блогеры и артисты
+                        знают своих подписчиков.</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/Кто твой подписчик.jpg" alt="Кто твой подписчик">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_16" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Ты меня знаешь?</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу пары блогеров задают друг другу откровенные
+                        вопросы, выясняют свои отношения и проверяют насколько они знают свою вторую половинку.</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/Ты меня знаешь.jpg" alt="Ты меня знаешь">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_15" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Сходка</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу популярные блогеры и артисты встречаются со своими
+                        фанатами лицом к лицу. Одни задают откровенные вопросы, а вторые отвечают, даже если вопросы
+                        мега неприятные. Ведущие Юля Гаврилина и Катя Голышева.</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/Сходка.jpg" alt="Сходка">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_20" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">#Удиви меня!</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу Миланы Некрасовой, в котором люди пытаются удивить
+                        Валю Карнавал и Илью Exile своими способностями и получить за это подарки.</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/Удиви меня.jpg" alt="Удиви меня">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_24" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Звёздные истории</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором мы устроили вечеринку на крыше, на которой
+                        гости пьют коктейли, жарят мясо на гриле и рассказывают откровенные истории из своей жизни.
+                        Уровень кринжатины просто зашкаливает!</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/Звёздные истории.jpg" alt="Звёздные истории">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_18" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">PVP ARENA</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором интернет-звёзды решают конфликты на ринге.
+                    </h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/PVP ARENA.jpg" alt="PVP ARENA">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_27" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">9 панчей</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">На шоу Кати Голышевой «9 панчей» две приглашённые звезды
+                        бьют друг друга по лицу разными предметами, если не правильно отвечают на интеллектуальные
+                        вопросы про спорт.</h5>
+                    <img class="mb-3" src="img/BUBBLEGUNSHOW/9 панчей.jpg" alt="9 панчей">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_26" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Краш</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу Даша Дошик пытается найти Егору Шипу настоящую
+                        любовь. В этом выпуске ей помогает Димас Блог. Целых 50 девушек борется за сердце Егора. Кого он
+                        выберет?</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/BUBBLEGUNSHOW/Краш.jpg" alt="Краш">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_25" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Не смейся</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В этом шоу Слава Бустер читает гостю жёсткие шутки про
+                        блогеров и артистов, которые придумали подписчики, а задача гостя не засмеяться иначе эту шутку
+                        он будет говорить лично тому, про кого она придумана.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/BUBBLEGUNSHOW/Не смейся.jpg" alt="Не смейся">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_22" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Arturo Show</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором ведущий Артуро берёт интервью у популярных
+                        блогеров и артистов, которых сам таковыми не считает, и всячески их стебет.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/BUBBLEGUNSHOW/Arturo Show.jpg" alt="Arturo Show">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_23" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Про тебя</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В шоу блогер должен угадать как его друзья ответили на
+                        вопросы связанные с ним. Если он не угадывает, то отвечает на каверзные вопросы под детектором
+                        лжи.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/BUBBLEGUNSHOW/Про тебя.jpg" alt="Про тебя">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_14" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Липсинг баттл</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Музыкальное шоу, в котором участники пародируют
+                        выступления звёзд, а звёзды выбирают, чьё перевоплощение им понравилось больше.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/BUBBLEGUNSHOW/Липсинг баттл.jpg" alt="Липсинг баттл">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-204749195_17" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Medium Sport/Логотип.jpg" alt="Medium Sport">
+                    <h1 class="d-inline-block">Medium Sport</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Семейное дерби</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором две звёздные пары соревнуются в знании
+                        футбола, отвечая на различные вопросы.</h5>
+                    <img class="mb-3" src="img/Medium Sport/Семейное дерби.jpg" alt="Семейное дерби">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Спортивный инстинкт</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Программа в которой популярные и талантливейшие гости
+                        постараются с помощью своей наблюдательности, а главное инстинкта и подсказок ведущего угадать
+                        каким видом спорта профессионально занимается представленные в студии спортсмены.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Medium Sport/Спортивный инстинкт.jpg"
+                        alt="Спортивный инстинкт">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Фарт</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это сериал, в котором идут настоящие соревнования. 50
+                        красивых и сексуальных девушек собрались в подземном бункере, чтобы благодаря исключительно
+                        своей удаче выиграть целый мешок денег. Раз в неделю, пройдя все испытания, победительница будет
+                        покидать бункер, а остальные девушки - продолжать бороться за деньги и свою свободу, пока им не
+                        повезёт.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Medium Sport/Фарт.jpg" alt="Фарт">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Хроникл</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Ностальгический проект о спортивных событиях прошлых лет.
+                        Герои, матчи, победы и трагедии. 2002 год. Ведущие: Дмитрий Шнякин и Дмитрий Позов. </h5>
+                    <img class="mb-3" src="img/Medium Sport/Хроникл.jpg" alt="Хроникл">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Трое</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Баскетбол! Футбол! Хоккей! Три самых популярных вида
+                        спорта объединятся на этой площадке. Каждый выпуск будет посвящён конкретной теме, а ведущие
+                        попытаются разобраться насколько сильно спорт интегрирован в различные сферы жизни: мода,
+                        музыка, бизнес и т.д. Каждый участник готовит истории на заданную тему, а приглашённый эксперт
+                        выслушивает все и выбирает самые яркие.</h5>
+                    <img class="mb-3" src="img/Medium Sport/Трое.jpg" alt="Трое">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_12" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">WIN TEAM KART</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Проект, где все звёзды которых вы только могли себе
+                        представить, сойдутся на гоночном треке, чтобы выяснить кто из них лучший!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Medium Sport/WIN TEAM KART.jpg" alt="WIN TEAM KART">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Не дай упасть</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Superball - соревнование с простой задачей - не дать
+                        воздушному шарику упасть на пол. Победитель получает 300к.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Medium Sport/Не дай упасть.jpg"
+                        alt="Не дай упасть">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Бодинегатив</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Леонид Слуцкий решает помочь человечеству и становится
+                        наставником Ивана Брагина по снижению веса, взяв на себя все расходы, чтобы: «бегемот уже
+                        перестал мозолить людям глаза». Леонид Викторович уверен в успехе, потому что ему не впервой
+                        тренировать людей в плохой физической форме!</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Medium Sport/Бодинегатив.jpg" alt="Бодинегатив">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-212021856_10" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/VK видео/Логотип.jpg" alt="VK видео">
+                    <h1 class="d-inline-block">VK видео (отдельные проекты)</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Кстати</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Гарик Харламов, Азамат Мусагалиев и Денис Дорохов каждый
+                        субботний вечер обсуждают актуальные события, шутят и общаются с гостями шоу.</h5>
+                    <img class="mb-3" src="img/VK видео/Кстати.jpg" alt="Кстати">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220754053_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Звёзды</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Десять супер-популярных звёзд сойдутся лицом к лицу,
+                        чтобы побороться за звание самой смешной звезды России. Помогать им в этом будут легендарные
+                        юмористические команды.</h5>
+                    <img class="mb-3" src="img/VK видео/Звёзды.jpg" alt="Звёзды">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220754053_21" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Open Mic</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Здесь выступают перспективные стендап-комики, а лучшие
+                        попадают в проект Money Mic, где уже будут бороться за деньги. Самых смешных выберет жюри и
+                        ведущий.</h5>
+                    <img class="mb-3" src="img/VK видео/Open Mic.jpg" alt="Open Mic">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220754053_28" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Битва за время</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Проект, в котором комики в разных юмористических жанрах
+                        пытаются рассмешить жюри за отведённое им время. Самый смешной в конце сезона получит 3 миллиона
+                        рублей! Изначально у участников есть только одна минута на выступление, но если жюри нравится
+                        происходящее на сцене, они будут добавлять минуты к таймеру.</h5>
+                    <img class="mb-3" src="img/VK видео/Битва за время.jpg" alt="Битва за время">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220754053_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Внутри Лапенко</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Юмористический сериал, отличительной чертой которого
+                        является то, что всех персонажей играет один человек — Антон Лапенко.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/VK видео/Внутри Лапенко.jpg" alt="Внутри Лапенко">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-220754053_11" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Big Russian Boss Show/Логотип.jpg"
+                        alt="Big Russian Boss Show">
+                    <h1 class="d-inline-block">Big Russian Boss Show</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Автотюн</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Пoпуляpный блoгep cтaнoвитcя вeдущим шoу, цeликoм
+                        пocвящeннoгo aвтoмoбилям и вceму, чтo c ними cвязaнo. Любитeль pocкoшныx шуб нeмeдля бepeт быкa
+                        зa poгa и в пepвoм жe выпуcкe пытaeтcя выяcнить, кудa дeлcя pиc, дoceлe пopaжaвший вooбpaжeниe
+                        cвoим paзнooбpaзиeм. Taкжe oн xoчeт узнaть, cущecтвуeт ли культуpa JDM в нынeшниx peaлияx, a
+                        ecли oнa ocтaлacь, тo в кaкoм видe. Пocлe Big Russian Boss пoкaзывaeт музeй япoнcкиx
+                        aвтoмoбилeй, c гoлoвoй oкунaeтcя в тeмaтичecкиe туcoвки и caдитcя зa pуль глaвнoй JDM мaшины,
+                        чтoбы пoзнaть вcю пpeлecть упpaвлeния eю. И этo лишь нaчaлo бoльшиx пpиключeний!</h5>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Автотюн.jpg" alt="Автотюн">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_33" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Moneyball</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это жёсткий баскетбол в формате 1 на 1 в два кольца. Данк
+                        - 3 очка, бросок из зон Moneyball - 2 очка, остальные броски - 1 очко. 1 очко = 1000 рублей.
+                        Игра длится 2 тайма по 4 минуты или до 30 очков. Победитель забирает деньги, проигравший уходит
+                        ни с чем.</h5>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Moneyball.jpg" alt="Moneyball">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_31" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Коты</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Большой Русский Босс возвращается с большим
+                        документальным проектом о котах! Суды, тюрьмы, приюты, чиновники, люди, а также хвосты и лапы —
+                        всё это в пятисерийном документальном сериале от легенды интернета. Босс отправляется на улицы
+                        Москвы, Екатеринбурга, Калининграда и других городов, чтобы рассказать о пользе домашних кошек и
+                        почему их так любит весь мир. Испытай настоящий КОТАРСИС!</h5>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Коты.jpg" alt="Коты">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_21" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Талант на вылет</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это самое субъективное шоу талантов на этой планете. Шоу,
+                        в котором собраны самые разные таланты, со всех уголков страны, чтобы выяснить кто самый
+                        талантливый! Решать же кто уходит, а кто останется и заберёт призы - будут сами участники!
+                    </h5>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Талант на вылет.jpg" alt="Талант на вылет">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_32" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Падкаст</h3>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Падкаст.jpg" alt="Падкаст">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_18" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Big Russian Balls</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Баскетбольное шоу от Величайшего. Правила: участнику
+                        нужно забросить мяч в кольцо с усложнением, которое указано на мяче. Второй участник должен
+                        повторить. Не можешь повторить - получаешь букву. Первый, кто соберёт позорное слово - проиграл.
+                    </h5>
+                    <img class="mb-3" src="img/Big Russian Boss Show/Big Russian Balls.jpg" alt="Big Russian Balls">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-124254828_22" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Bad Company/Логотип.jpg" alt="Bad Company">
+                    <h1 class="d-inline-block">Bad Company</h1>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Улица</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Каждый выпуск шоу проходит в формате «уличного баттла»:
+                        музыканты играют вживую на центральных улицах Москвы и соревнуются по принципу плей-офф.
+                        Проигравший выбывает, второго шанса ему не дают.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Bad Company/Улица.jpg" alt="Улица">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-5790407_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Коротышки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу коротких миниатюр. Победитель забирает 100к. Решать,
+                        кто уйдёт с деньгами, а кто будет их караулить на выходе будут Гурам Амарян и Валера Равдин. На
+                        кону серьёзные бабки, поэтому ребятам предстоит выложиться на полную.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Bad Company/Коротышки.jpg" alt="Коротышки">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-5790407_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Hustle MMA/Логотип.jpg" alt="Hustle MMA">
+                    <h1 class="d-inline-block">Hustle MMA</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Hustle MMA</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это разговор с увлекательными умами, спортсменами и
+                        знаменитостями. Мы говорим о боях, о жизни и многом другом.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Hustle MMA/Hustle MMA.jpg" alt="Hustle MMA">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-209185802_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Парковка/Логотип.jpg" alt="Парковка">
+                    <h1 class="d-inline-block">Парковка</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">На иже за ижом</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Известному комику Денису Дорохову в прошлом подарили
+                        мотоцикл ИЖ 1987 года выпуска. Но раритетный байк сейчас находится в далёкой Уфе, из которой его
+                        ещё нужно забрать. Ехать традиционными путями и способами представляется скучным занятием, и
+                        юморист решает эту проблему нетривиальным способом. Он покупает красный ИЖ 1985 года, за свою
+                        форму названный в народе «каблучком». Потом он садится за руль своей новоприобретённой машины,
+                        вызванивает тёзку и зовёт его составить ему компанию в предстоящем путешествии. Увлекающийся
+                        крутыми автомобилями друг охотно соглашается, совершенно не подозревая, на чём они поедут.</h5>
+                    <img class="mb-3" src="img/Парковка/На иже за ижом.jpg" alt="На иже за ижом">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221130436_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Разгон</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Maшины зaнимaют ocoбoe мecтo в cepдцax aвтoлюбитeлeй, и
+                        вeдущиe шoу нe cтaнoвятcя иcключeниями. Oни пocвящaют выпуcки вceвoзмoжным тaчккaм, oбcуждaя
+                        близкиe к ним тeмы. B зaвязкe oбcуждeния кaждый из пpиcутcтвующиx paccкaжeт o пepвoй мaшинe, c
+                        кoтopoй у нeгo нaчaлacь бoльшaя любoвь к этoму виду тpaнcпopтa. Зaтeм учacтники пpeдлoжaт
+                        нaибoлee oптимaльныe вapиaнты c уcлoвиeм, чтo cтoимocть дoлжнa уклaдывaтьcя в З миллиoнa pублeй,
+                        пocлe чeгo oбcудят китaйскиe внeдopoжники. He oбxoдитcя и бeз cвeжиx aвтoмoбильныx нoвocтeй, гдe
+                        нaйдeтcя мecтo для буpныx cпopoв, пoxвacтушeк и тecт-дpaйвoв.</h5>
+                    <img class="mb-3" src="img/Парковка/Разгон.jpg" alt="Разгон">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221130436_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Рыцарь Дорох</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Пoпуляpный кoмик Дeниc Дopoxoв oчeнь любит eздить нa
+                        бaйкe. Пepeд oчepeднoй зимoй oн пepeгoняeт cвoй Ducati в Coчи, a в пpeддвepии нoвoгo мoтoceзoнa
+                        peшaeт вepнуть eгo в poдную Mocкву. Пo пpибытии в пункт нaзнaчeния oн пpoбуeт cвoи cилы в
+                        coчинcкoй мoтoшкoлe пoд пpиcмoтpoм мecтнoгo pукoвoдитeля Mapaтa и вмecтe c ним кoлecит пo
+                        cepпaнтину, pacпoлoжeннoму нeпoдaлeку. Пocлe этoгo pыцapь Дopox eдeт в cтopoну Кpacнoдapa, гдe
+                        пoceщaeт тeмaтичecкий клaбxaуc и дaжe бepeт интepвью у oднoгo из eгo ocнoвaтeлeй. A пoтoм Дeниc
+                        c Mapaтoм нaпpaвляютcя в Pocтoв, гдe плaниpуют вcтpeтитьcя c oдним кacтoмщикoм...</h5>
+                    <img class="mb-3" src="img/Парковка/Рыцарь Дорох.jpg" alt="Рыцарь Дорох">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221130436_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Плохие автомобильные шутки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">В проекте популярные юмористы садятся в машину и
+                        отправляются в путь, шутя на различные темы. Их шутки вызывают смешанные чувства, но в
+                        большинстве случаев вызывают улыбки на лицах зрителей.</h5>
+                    <img class="mb-3" src="img/Парковка/Плохие автошутки.jpg" alt="Плохие автошутки">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221130436_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Тачки звёзд</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Смотрим на машины звёзд.</h5>
+                    <img class="mb-3" src="img/Парковка/Тачки звёзд.jpg" alt="Тачки звёзд">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221130436_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Sunc/Логотип.jpg" alt="SUNC">
+                    <h1 class="d-inline-block">SUNC</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Timeline</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Проект, о творческом пути известных музыкантов. Как они
+                        меняли себя и меняли нас. Ведущие проекта: Сергей Мудрик и Саша Ваш. </h5>
+                    <img class="mb-3" src="img/Sunc/Timeline.jpg" alt="Timeline">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-222182398_3" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">30 треков</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Задача гостя – угадать 30 треков. 15 из них мы
+                        подготовили специально под участника, ещё 15 он получит, выбрав случайные категории.</h5>
+                    <img class="mb-3" src="img/Sunc/30 треков.jpg" alt="30 треков">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-222182398_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Muzpodkast</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это подкаст о музыке, в котором ведущие Сергей Мудрик и
+                        Расул Чабдаров в общении с гостями пытаются раскрыть многогранность музыкальной индустрии для
+                        зрителей.</h5>
+                    <img class="mb-3" src="img/Sunc/Muzpodkast.jpg" alt="Muzpodkast">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-222182398_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Чё по фокусам/Логотип.jpg" alt="Чё по фокусам">
+                    <h1 class="d-inline-block">Чё по фокусам?</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Чё по фокусам</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Развлекательное шоу. 2 лучших иллюзиониста России -
+                        Алексей Гигаури и Назар Каюмов заставят звёзд испытать неподдельные эмоции и шок. В конце
+                        каждого выпуска звёздные гости определяют победителя, а проигравший - выполняет неожиданное
+                        наказание.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Чё по фокусам/Чё по фокусам.jpg"
+                        alt="Чё по фокусам">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-218471721_1" target="_blank">1 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-218471721_2" target="_blank">2 СЕЗОН</a>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-12">
+                            <a href="https://vk.com/video/playlist/-218471721_3" target="_blank">3 СЕЗОН</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Моя хорошая/Логотип.jpg" alt="Моя хорошая">
+                    <h1 class="d-inline-block">Моя хорошая</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Кусь</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором Юля Лосева и Белла вместе с гостями
+                        готовят блюда из популярных фильмов, сериалов и мультфильмов.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Моя хорошая/Кусь.jpg" alt="Кусь">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-223436494_1" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Мэтч/Логотип.jpeg" alt="Мэтч">
+                    <h1 class="d-inline-block">Мэтч (Первый Женский Федеральный)</h1>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Быстрые свидания</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Это шоу, в котором Олеся, Оля и Катя помогают найти
+                        гостье - идеальную пару. За сердце героини будут бороться 10 парней. Каждая из ведущих может
+                        выгнать всего 3-х. Последний парень, который останется, будет идеальным выбором для нашей
+                        подопечной.</h5>
+                    <img class="mb-3" src="img/Мэтч/Быстрые свидания.jpeg" alt="Быстрые свидания">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_9" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Подружки</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Ульяна Пылаева, Ася Резник, Катя Вяликова и Лиза Ющук
+                        пробуют подобрать парня своей звёздной подружке. Гостья не видит парней, которые находятся в
+                        соседней студии и делает свой выбор, опираясь только на рассказы ведущих о них.</h5>
+                    <img class="mb-3" src="img/Мэтч/Подружки.jpeg" alt="Подружки">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_8" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Свободное отношение</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Откровенные разговоры про важную составляющую в жизни
+                        каждого человека. Первое юмористическое шоу про интимную сторону жизни.</h5>
+                    <img class="mb-3" src="img/Мэтч/Свободное отношение.jpeg" alt="Свободное отношение">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Рейтинг</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Девушки составляют рейтинг парней.</h5>
+                    <img class="mb-3" src="img/Мэтч/Рейтинг.jpeg" alt="Рейтинг">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_7" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">GRLS</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Проект, в котором 4 подруги (Зоя Яровицына, Карина
+                        Мейханаджян, Надя Джабраилова и Сауле Юсупова) приглашают на диалог гостей, которых давно хотели
+                        о многом спросить. Мэтры индустрии и мастера своего дела, в первую очередь их гостьи - женщины,
+                        которые самостоятельно добились успеха в мире мужчин.</h5>
+                    <img class="mb-3" src="img/Мэтч/GRLS.jpeg" alt="GRLS">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_2" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">Я же говорила</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором мы пытаемся понять, насколько мужчины
+                        женщин и их поступки.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Мэтч/Я же говорила.jpeg" alt="Я же говорила">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_5" target="_blank">СМОТРЕТЬ</a>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 mt-4">
+                    <h3 class="project">М/Ж</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу Ильи Соболева, в котором парни и девушки анонимно
+                        задают друг другу вопросы, которые никогда бы не задали лично. Какой вес девушки неприемлем для
+                        парней? Как часто девушки смотрят фильмы для взрослых? Что самое безрассудное делали мужчины
+                        ради ночи с девушкой?</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Мэтч/М-Ж.jpeg" alt="М/Ж">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-217878975_6" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-inline-block logo" src="img/Оля Парфенюк/Логотип.jpeg" alt="Оля Парфенюк">
+                    <h1 class="d-inline-block">Оля Парфенюк</h1>
+                </div>
+                <div class="col-12 mt-4">
+                    <h3 class="project">Выгул</h3>
+                    <h5 class="text-light font-KurochkaLapkoi">Шоу, в котором проводят интервью в формате прогулки со
+                        звездой и её домашним питомцем.</h5>
+                    <img style="width: 50%;" class="mb-3" src="img/Оля Парфенюк/Выгул.jpeg" alt="Выгул">
+                    <br>
+                    <a href="https://vk.com/video/playlist/-221739368_4" target="_blank">СМОТРЕТЬ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="pt-5 pb-5 text-center font-DaVinci">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-danger"><sup>*</sup> возможны ошибки, неточности, в связи со сложностью нахождения
+                        всех шоу и их описаний данного проекта.</h1>
+                </div>
+                <div class="col-6">
+                    <h3>Все шоу, упоминающиеся на странице принадлежат Medium Quality Production.</h3>
+                </div>
+                <div class="col-6">
+                    <h3>Разработчик: MylnikCode.</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $('body').append('<div class="upbtn"></div>');
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.upbtn').css({
+                    bottom: 0
+                });
+            } else {
+                $('.upbtn').css({
+                    bottom: '-80px'
+                });
+            }
+        });
+        $('.upbtn').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+
+        function progressBar() {
+            let scroll = document.body.scrollTop || document.documentElement.scrollTop
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            let scrolled = scroll / height * 100
+            document.getElementById('progressBar').style.width = scrolled + '%'
+        }
+        window.addEventListener('scroll', progressBar)
+
+        array = []
+        number = 0
+        document.querySelectorAll('.project').forEach(function (el) {
+            array.push(el.innerHTML)
+            el.id = `project_${number}`
+            number++
+        });
+
+        document.getElementById("count_projects").innerHTML = array.length
+
+        $(function () {
+            $("#user_request").autocomplete({
+                source: array
+            });
+        });
+
+        function Search() {
+            let name_show = document.getElementById("user_request").value
+            document.getElementById("user_request").value = ""
+            if (array.includes(name_show)) {
+                let number_show = 0
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] == name_show) {
+                        number_show = i
+                        break
+                    }
+                }
+                let id = `project_${number_show}`
+                let parent = document.getElementById(id).parentNode
+                setTimeout(function () {
+                    $('html, body').animate({
+                        scrollTop: $(`#${id}`).offset().top
+                    }, 1000, function () {
+                        $(parent).animate({
+                            opacity: 0.1
+                        }, 1000, function () {
+                            $(parent).animate({
+                                opacity: 1
+                            }, 1000);
+                        });
+                    });
+                }, 1000)
+            } else {
+                alert("Шоу не найдено.")
+            }
+        }
+    </script>
+</body>
+
+</html>
