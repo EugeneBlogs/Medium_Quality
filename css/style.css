@@ -1,16 +1,22 @@
 @font-face {
-    font-family: 'LeonovSP';
-    src: url(/fonts/LeonovSP.otf);
+    font-family: "LeonovSP";
+    src: url("../fonts/LeonovSP.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'DaVinci';
-    src: url(/fonts/DaVinci.ttf);
+    font-family: "DaVinci";
+    src: url("../fonts/DaVinci.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'KurochkaLapkoi';
-    src: url(/fonts/KurochkaLapkoi.ttf);
+    font-family: "KurochkaLapkoi";
+    src: url("../fonts/KurochkaLapkoi.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 body {
